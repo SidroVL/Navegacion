@@ -1,3 +1,5 @@
+import { Ajustes2Page } from './../pages/ajustes2/ajustes2';
+import { AjustesPage } from './../pages/ajustes/ajustes';//se añade despues de añadir ajustes page a declaration
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -6,10 +8,22 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { PrincipalPage } from '../pages/principal/principal';
+import { Principal2Page } from '../pages/principal2/principal2';
+import { ModalPage } from '../pages/modal/modal';
+import { TabsPage } from '../pages/tabs/tabs';
+import { Pagina3Page } from '../pages/pagina3/pagina3';
 
 @NgModule({
   declarations: [
     MyApp,
+    PrincipalPage,
+    Principal2Page,
+    Pagina3Page,
+    AjustesPage,
+    Ajustes2Page,
+    ModalPage,
+    TabsPage,
     HomePage
   ],
   imports: [
