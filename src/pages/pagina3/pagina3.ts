@@ -1,4 +1,4 @@
-import { NavParams } from 'ionic-angular';
+import { NavParams, NavController } from 'ionic-angular';
 import { Component } from '@angular/core';
 
 
@@ -8,9 +8,16 @@ import { Component } from '@angular/core';
 })
 export class Pagina3Page {
   pais:any={};
-  constructor(private NavParams:NavParams) {
+  constructor(private NavParams:NavParams,
+              private navCtrl:NavController) { 
       console.log(this.NavParams);
       this.pais=this.NavParams.get("pais");//etiqueta igual que en la otra pagina
       }
-
+  
+ IrAtras(){
+    this.navCtrl.pop();
+ }
+ IrRoot(){
+  this.navCtrl.popToRoot();
+}
 }
