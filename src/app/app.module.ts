@@ -7,7 +7,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
 import { PrincipalPage } from '../pages/principal/principal';
 import { Principal2Page } from '../pages/principal2/principal2';
 import { ModalPage } from '../pages/modal/modal';
@@ -24,7 +23,7 @@ import { Pagina3Page } from '../pages/pagina3/pagina3';
     Ajustes2Page,
     ModalPage,
     TabsPage,
-    HomePage
+    
   ],
   imports: [
     BrowserModule,
@@ -33,7 +32,14 @@ import { Pagina3Page } from '../pages/pagina3/pagina3';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    PrincipalPage,
+    Principal2Page,
+    Pagina3Page,
+    AjustesPage,
+    Ajustes2Page,
+    ModalPage,
+    TabsPage,
+    
   ],
   providers: [
     StatusBar,

@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   selector: 'page-pagina3',
   templateUrl: 'pagina3.html'
 })
-export class HomePage {
+export class Pagina3Page {
 
   constructor() {
 
