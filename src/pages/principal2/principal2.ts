@@ -15,7 +15,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class Principal2Page {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  paises:any[]=[
+    {pais: "Francia", capital:"Paris"}
+    ,{pais: "Japón", capital:"Tokyo"}
+    ,{pais: "Madagascar", capital:"Antananarivo"}
+
+  ]
+    constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
