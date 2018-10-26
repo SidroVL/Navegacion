@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Pagina3Page } from '../pagina3/pagina3';
 
 /**
  * Generated class for the Principal2Page page.
@@ -28,4 +29,9 @@ export class Principal2Page {
     console.log('ionViewDidLoad Principal2Page');
   }
 
+  irPagina3(p:any){
+
+    console.log(p);
+    this.navCtrl.push(Pagina3Page, {"pais":p});//metodo pasando un parametro
+  }
 }

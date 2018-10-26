@@ -1,3 +1,4 @@
+import { NavParams } from 'ionic-angular';
 import { Component } from '@angular/core';
 
 
@@ -6,9 +7,10 @@ import { Component } from '@angular/core';
   templateUrl: 'pagina3.html'
 })
 export class Pagina3Page {
-
-  constructor() {
-
-  }
+  pais:any={};
+  constructor(private NavParams:NavParams) {
+      console.log(this.NavParams);
+      this.pais=this.NavParams.get("pais");//etiqueta igual que en la otra pagina
+      }
 
 }

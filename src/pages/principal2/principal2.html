@@ -15,7 +15,8 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item *ngFor="let p of paises" >
+    <ion-item *ngFor="let p of paises"
+       (click)="irPagina3(p)" >
       {{p.pais}}
     </ion-item>
 
