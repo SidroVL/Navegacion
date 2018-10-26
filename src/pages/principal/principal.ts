@@ -1,6 +1,7 @@
+import { Principal2Page } from './../principal2/principal2';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Principal2Page } from '../principal2/principal2';
+
 
 /**
  * Generated class for the PrincipalPage page.
@@ -16,6 +17,7 @@ import { Principal2Page } from '../principal2/principal2';
 })
 export class PrincipalPage {
 
+  pagina2:any=Principal2Page;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
