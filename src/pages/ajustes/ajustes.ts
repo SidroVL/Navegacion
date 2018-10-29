@@ -21,5 +21,8 @@ export class AjustesPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad AjustesPage');
   }
+  activarPrinicpal(){
+    this.navCtrl.parent.select(0) //parent se refiere a la pagina justo encima tabs en este caso??
+  }
 
 }
