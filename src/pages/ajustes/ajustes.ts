@@ -25,7 +25,7 @@ export class AjustesPage {
     console.log('ionViewDidLoad AjustesPage');
   }
   activarPrinicpal(){
-    this.navCtrl.parent.select(0) //parent se refiere a la pagina justo encima tabs en este caso??
+    this.navCtrl.parent.select(0) //parent se refiere a la pagina justo encima ,tabs en este caso??
   }
 
   mostrarModal(){     //inyectar modalcontroller
@@ -34,10 +34,10 @@ export class AjustesPage {
     modal.present() //lo hace visible
      
     //para obtener los parámeotros de vuelta
-    modal.onDidDismiss((parametros)=>{
+    modal.onDidDismiss((parametros)=>{ //(()=>{}) no recibe datos (es la funcion que se puede declarar ahi mismo o no)
       console.log("Datos de vuelta");
       console.log(parametros);
-    });//() no recibe datos (es la funcion que se puede declarar ahi mismo o no)
+    });
   }
   
 
