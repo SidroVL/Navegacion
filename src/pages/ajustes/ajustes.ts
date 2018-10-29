@@ -29,10 +29,16 @@ export class AjustesPage {
   }
 
   mostrarModal(){     //inyectar modalcontroller
-    //let modal =this.modalCtrls.create(ModalPage);//sin pasar datos 
+    //let modal =this.modalCtrls.create(ModalPage);  sin pasar datos 
     let modal =this.modalCtrls.create(ModalPage, {nombre:"Dolores", edad: 24});
     modal.present() //lo hace visible
-
+     
+    //para obtener los parámeotros de vuelta
+    modal.onDidDismiss((parametros)=>{
+      console.log("Datos de vuelta");
+      console.log(parametros);
+    });//() no recibe datos (es la funcion que se puede declarar ahi mismo o no)
   }
+  
 
 }
