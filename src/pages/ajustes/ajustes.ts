@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { ModalPage } from '../modal/modal';
 
 /**
  * Generated class for the AjustesPage page.
@@ -15,7 +16,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AjustesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, 
+              public navParams: NavParams,
+              public modalCtrls: ModalController) {
   }
 
   ionViewDidLoad() {
@@ -23,6 +26,13 @@ export class AjustesPage {
   }
   activarPrinicpal(){
     this.navCtrl.parent.select(0) //parent se refiere a la pagina justo encima tabs en este caso??
+  }
+
+  mostrarModal(){     //inyectar modalcontroller
+    //let modal =this.modalCtrls.create(ModalPage);//sin pasar datos 
+    let modal =this.modalCtrls.create(ModalPage, {nombre:"Dolores", edad: 24});
+    modal.present() //lo hace visible
+
   }
 
 }
